@@ -7,6 +7,7 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
 
 .main{
@@ -17,29 +18,137 @@ body{
 
 }
 
+
 .left{
     background-image: url(./images/pandu.jpg);
     width: 35vw;
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
-    /* font-family: Norse-old, sans-serif; */
+    font-family: Norse-Bold, sans-serif;
+    
 
 }
 
 .right{
     display: flex;
     flex-direction: column;
+    background-color: #f8f3f3;
+    width: 65vw;
 }
 
 .first{
     height: 33vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-left: 5%;
+    margin-bottom: 5%;
 }
 
 .second{
     height: 33vh;
+    box-shadow: 1px 5px #E5E7EB;
+    
 }
 
 .third{
     height: 33vh
+}
+
+h2 {
+    font-size: 1rem;
+    margin: 0; /* Add this to remove any default margins */
+    line-height: 1; /* Add this to ensure line breaks are as expected */
+}
+
+.form-main-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+   
+}
+
+.form-div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+input{
+    border: 1PX solid #E5E7EB;
+    height: 25px;
+    border-radius: 5px;
+}
+
+input:focus{
+    border: 1px solid rgb(3, 3, 10)
+}
+
+input:invalid{
+    border: 1px solid red;
+}
+
+#error{
+    color: red;
+    font-size: 10px;
+    margin: 1px;
+}
+
+.btn-create{
+    background: #596D48;
+    color: white;
+    border:1px solid #596D48;
+    border-radius: 15px;
+    height: 30px;
+    font-size: medium;
+    font-weight: bold;
+    margin-top: 10px;
+    box-shadow: 1px 5px #E5E7EB;
+}
+
+.hyperlink{
+    margin-left: 50px;
+    margin-top: 15px;
+    font-weight: bold;
+
+}
+
+a{
+    color: #596D48;
+    text-decoration: none;
+}
+
+.forFooter a{
+    color: green;
+    font-family: sans-serif;
+}
+
+.p-footer{
+    font-family: sans-serif;
+}
+
+.forFooter{
+    height: 60vh;
+    display: flex;
+    align-items: flex-end;
+}
+.semi-transparent{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    opacity: 0.6;
+    font-weight: bolder;
+}
+
+.forImage{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 40vh;
 }
