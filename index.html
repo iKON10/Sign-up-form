@@ -45,7 +45,7 @@
 
                         <div class="form-div">
                             <label for="password">Password</label>
-                            <input type="password" id="password" name="password">
+                            <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,}" title="Password must contain at least one uppercase letter, one lowercase letter, one digit, one symbol, and be at least 8 characters long" required>
                             <p id="error"></p>
                             <button type="submit" class="btn btn-create">Create</button>
                         </div>
