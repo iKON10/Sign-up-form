@@ -1,16 +1,24 @@
 document.addEventListener('DOMContentLoaded', function(){
 
-    let password = document.querySelector('#password').value;
-    let confirmPassword = document.querySelector('#confirmPassword').value;
+    let passwordInput = document.querySelector('#password');
+    let confirmPasswordInput = document.querySelector('#confirmPassword');
     console.log('Hi');
 
     let error = document.querySelector('#error');
 
-        if(password =="" && confirmPassword == ""){
-        error.innerHTML = '*passwords do not match';
-        }
-        else if(password === confirmPassword){
+    passwordInput.addEventListener('input', validatePassword);
+    confirmPasswordInput.addEventListener('input', validatePassword);
+
+    function validatePassword(){
+        let password = passwordInput.value;
+        let confirmPassword = confirmPasswordInput.value;
+
+        if(password === confirmPassword){
             error.innerHTML = "";
         }
-    
+
+        else{
+            error.innerHTML = "*passwords do not match!";
+        }
+    }
 })
